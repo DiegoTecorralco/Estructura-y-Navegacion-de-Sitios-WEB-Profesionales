@@ -12,6 +12,7 @@ El siguiente menú se muestra de forma constante en todas las páginas del sitio
 
 ## Wireframe – Página de Inicio
 
+Esta será la página de inicio donde el usuario va a poder visualizar su pagina de inicio con una seccion de promociones, sección de productos populares
 
 ---------------------------------------------------------
 | LOGO | Inicio | Tienda | Productos | Carrito | Cuenta |

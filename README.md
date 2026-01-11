@@ -169,3 +169,33 @@ Aquí se va a poder seleccionar el metodo de pago con el que deseas pagar, ya se
 ---------------------------------------------------------
 | Footer |
 ---------------------------------------------------------
+
+
+
+## Breadcrumbs 
+
+Los breadcrumbs son un elemento de navegación que *muestra al usuario el camino que ha recorrido dentro del sitio*, permitiéndole regresar fácilmente a secciones anteriores.
+
+*Ejemplo*
+**Inicio > Productos > Electrónica > Laptop Gamer**
+
+
+## Página de Error 404
+
+La página 404 aparece cuando el usuario intenta acceder a una página que no existe o fue eliminada.
+*Una página 404 personalizada mejora la experiencia del usuario y evita que abandone el sitio.*
+
+------------------------------------------------
+|                ERROR 404                    |
+|          Página no encontrada               |
+                                             
+|  Lo sentimos, no pudimos encontrar          |
+|  la página que buscas.                      |
+
+|        [ Volver al Inicio ]                 |
+
+|  Enlaces útiles:                            |
+|  - Inicio                                   |
+|  - Productos                                |
+|  - Soporte                                  |
+

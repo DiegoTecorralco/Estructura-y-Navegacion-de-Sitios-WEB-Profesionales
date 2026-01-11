@@ -176,8 +176,14 @@ Aquí se va a poder seleccionar el metodo de pago con el que deseas pagar, ya se
 
 Los breadcrumbs son un elemento de navegación que *muestra al usuario el camino que ha recorrido dentro del sitio*, permitiéndole regresar fácilmente a secciones anteriores.
 
-*Ejemplo*
+*Ejemplo 1*
 **Inicio > Productos > Electrónica > Laptop Gamer**
+
+*Ejemplo 2*
+**Inicio > Mi Cuenta > Configuración > Seguridad**
+
+*Ejemplo 3*
+**Inicio > Categoria > ropa > playera Nike**
 
 
 ## Página de Error 404

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Tecommers | Pedidos</title>
+</head>
+<body>
+
+<div class="page">
+
+    <!-- HEADER -->
+    <header class="header">
+        <h1>Tecommers</h1>
+    </header>
+
+    <!-- NAVBAR -->
+    <nav class="navbar">
+        <a href="index.html" class="btn-navbar">Inicio</a>
+        <a href="tienda.html" class="btn-navbar">Tienda</a>
+        <a href="productos.html" class="btn-navbar">Productos</a>
+        <a href="pedidos.html" class="btn-navbar">Pedidos</a>
+        <a href="cuenta.html" class="btn-navbar">Cuenta</a>
+    </nav>
+
+    <!-- BREADCRUMBS -->
+    <div class="breadcrumbs">
+        <a href="index.html">Inicio</a> / <span>Pedidos</span>
+    </div>
+
+    <!-- CONTENIDO -->
+    <main class="content">
+
+        <section class="historial">
+            <h2>Mis pedidos</h2>
+
+            <!-- PEDIDO -->
+            <div class="pedido-card">
+                <div class="pedido-header">
+                    <span class="pedido-id">Pedido #001</span>
+                    <span class="estado entregado">Entregado</span>
+                </div>
+
+                <div class="pedido-info">
+                    <p><strong>Fecha:</strong> 10/01/2026</p>
+                    <p><strong>Total:</strong> $1,250.00</p>
+                </div>
+
+                <a href="pedidoDetalle.html" class="btn-detalle">Ver detalle</a>
+            </div>
+
+            <!-- PEDIDO -->
+            <div class="pedido-card">
+                <div class="pedido-header">
+                    <span class="pedido-id">Pedido #002</span>
+                    <span class="estado proceso">En camino</span>
+                </div>
+
+                <div class="pedido-info">
+                    <p><strong>Fecha:</strong> 05/01/2026</p>
+                    <p><strong>Total:</strong> $799.00</p>
+                </div>
+
+                <a href="pedidoDetalle2.html" class="btn-detalle">Ver detalle</a>
+            </div>
+
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <p>© 2026 Tecommers | Todos los derechos reservados</p>
+    </footer>
+
+</div>
+
+</body>
+</html>

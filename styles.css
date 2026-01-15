@@ -1,0 +1,604 @@
+/* =========================
+   RESET GENERAL
+========================= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* =========================
+   ESTRUCTURA PRINCIPAL
+========================= */
+html, body {
+  height: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.page {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* =========================
+   HEADER
+========================= */
+.header {
+  text-align: center;
+  background-color: blueviolet;
+  color: rgb(254, 216, 255);
+  padding: 15px;
+}
+
+/* =========================
+   NAVBAR
+========================= */
+.navbar {
+  background-color: rgb(217, 191, 242);
+  display: flex;
+  justify-content: space-around;
+  padding: 10px;
+}
+
+.btn-navbar {
+  text-decoration: none;
+  background-color: darkmagenta;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.btn-navbar:hover {
+  background-color: rgb(151, 104, 195);
+}
+
+/* =========================
+   BREADCRUMBS
+========================= */
+.breadcrumbs {
+  padding: 10px 20px;
+  font-size: 14px;
+  background-color: #f3f3f3;
+}
+
+.breadcrumbs a {
+  color: darkmagenta;
+  text-decoration: none;
+}
+
+.breadcrumbs span {
+  color: #555;
+}
+
+/* =========================
+   CONTENIDO PRINCIPAL
+========================= */
+.content {
+  flex: 1;              /* empuja el footer */
+  padding: 20px;
+}
+
+/* =========================
+   PROMOCIONES
+========================= */
+.promociones {
+  margin-bottom: 30px;
+}
+
+.promociones h2 {
+  margin-bottom: 10px;
+}
+
+.banner {
+  background-color: #ddd;
+  padding: 40px;
+  text-align: center;
+  border-radius: 5px;
+}
+
+/* =========================
+   PRODUCTOS POPULARES
+========================= */
+.productos h2 {
+  margin-bottom: 10px;
+}
+
+.productos-grid {
+  display: flex;
+  gap: 20px;
+}
+
+.producto {
+  flex: 1;
+  background-color: #eee;
+  padding: 30px;
+  text-align: center;
+  border-radius: 5px;
+}
+
+/* =========================
+   FOOTER
+========================= */
+.footer {
+  background-color: #222;
+  color: white;
+  text-align: center;
+  padding: 15px;
+}
+
+/* =========================
+   CATEGORÍAS - TIENDA
+========================= */
+.categorias h2 {
+  margin-bottom: 15px;
+}
+
+.categorias-grid {
+  display: flex;
+  gap: 20px;
+}
+
+.categoria {
+  flex: 1;
+  background-color: #eee;
+  padding: 40px;
+  text-align: center;
+  border-radius: 5px;
+  font-size: 18px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.categoria:hover {
+  background-color: rgb(217, 191, 242);
+}
+
+/* =========================
+   LISTA DE PRODUCTOS
+========================= */
+.lista-productos h2 {
+  margin-bottom: 15px;
+}
+
+.productos-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.producto {
+  background-color: #eee;
+  padding: 30px;
+  text-align: center;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: transform 0.2s, background-color 0.3s;
+}
+
+.producto:hover {
+  background-color: rgb(217, 191, 242);
+  transform: translateY(-5px);
+}
+
+/* =========================
+   HISTORIAL DE PEDIDOS PRO
+========================= */
+.historial h2 {
+  margin-bottom: 20px;
+}
+
+.pedido-card {
+  background-color: #f8f5fb;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.08);
+}
+
+.pedido-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.pedido-id {
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.estado {
+  padding: 5px 12px;
+  border-radius: 20px;
+  font-size: 13px;
+  color: white;
+}
+
+.estado.entregado {
+  background-color: darkmagenta;
+}
+
+.estado.proceso {
+  background-color: blueviolet;
+}
+
+.pedido-info p {
+  margin: 5px 0;
+}
+
+.btn-detalle {
+  margin-top: 15px;
+  background-color: darkmagenta;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+
+  /* 🔥 ESTO ES LO IMPORTANTE */
+  text-decoration: none;      /* quita subrayado */
+  display: inline-block;      /* se comporta como botón */
+}
+
+.btn-detalle:hover {
+  background-color: rgb(151, 104, 195);
+}
+/* =========================
+   DETALLE DE PEDIDO
+========================= */
+.pedido-detalle {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Resumen */
+.pedido-resumen {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Productos */
+.pedido-productos {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.producto-pedido {
+  display: flex;
+  gap: 15px;
+  background-color: #f8f5fb;
+  padding: 15px;
+  border-radius: 8px;
+}
+
+.producto-img {
+  width: 80px;
+  height: 80px;
+  background-color: #ddd;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  border-radius: 5px;
+}
+
+.producto-nombre {
+  font-weight: bold;
+}
+
+/* Información extra */
+.pedido-extra {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.pedido-box {
+  background-color: #f8f5fb;
+  padding: 15px;
+  border-radius: 8px;
+}
+
+.pedido-box h3 {
+  margin-bottom: 8px;
+}
+
+.pedido-box.total {
+  background-color: rgb(217, 191, 242);
+  font-weight: bold;
+}
+/* =========================
+   ERROR 404
+========================= */
+
+.error {
+    max-width: 600px;
+    margin: 60px auto;
+    padding: 40px;
+    background-color: #f7f2fc;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.error-title {
+    font-size: 48px;
+    color: darkmagenta;
+    margin-bottom: 10px;
+}
+
+.error-subtitle {
+    font-size: 22px;
+    font-weight: bold;
+    color: #5a2d82;
+    margin-bottom: 20px;
+}
+
+.error-msg {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 30px;
+    line-height: 1.6;
+}
+
+/* Botón principal */
+.error .btn-detalle {
+    display: inline-block;
+    background-color: darkmagenta;
+    color: white;
+    padding: 12px 25px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.error .btn-detalle:hover {
+    background-color: rgb(151, 104, 195);
+    transform: translateY(-2px);
+}
+
+/* Enlaces útiles */
+.error-links {
+    margin-top: 30px;
+}
+
+.error-links p {
+    font-weight: bold;
+    color: #5a2d82;
+    margin-bottom: 10px;
+}
+
+.error-links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.error-links li {
+    margin: 8px 0;
+}
+
+.error-links a {
+    color: darkmagenta;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.error-links a:hover {
+    text-decoration: underline;
+}
+
+/* =========================
+   CATEGORÍAS
+========================= */
+
+.categorias {
+    margin: 40px 0;
+}
+
+.categorias h2 {
+    margin-bottom: 20px;
+    color: darkmagenta;
+}
+
+.categorias-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 25px;
+}
+
+/* Card de categoría */
+.categoria {
+    background-color: #f7f2fc;
+    padding: 25px;
+    text-align: center;
+    border-radius: 12px;
+    font-weight: bold;
+    color: darkmagenta;
+    text-decoration: none;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+/* Hover tipo Amazon / ML */
+.categoria:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 22px rgba(0, 0, 0, 0.15);
+}
+
+
+/* =========================
+   RESPONSIVE SIN PERDER ESTILO
+========================= */
+
+/* TABLETAS */
+@media (max-width: 1024px) {
+
+    .navbar {
+        gap: 40px;
+        padding: 10px;
+    }
+
+    .btn-navbar {
+        padding: 8px 14px;
+        font-size: 14px;
+    }
+
+    .content {
+        padding: 20px;
+    }
+
+    .categorias-grid,
+    .productos-grid {
+        gap: 20px;
+    }
+}
+
+
+/* CELULARES */
+@media (max-width: 768px) {
+
+    /* Navbar sigue en fila */
+    .navbar {
+        flex-wrap: wrap;
+        gap: 15px;
+        justify-content: center;
+    }
+
+    .btn-navbar {
+        padding: 8px 12px;
+        font-size: 13px;
+    }
+
+    /* Categorías */
+    .categorias-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* Productos */
+    .productos-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .producto-card {
+        padding: 16px;
+    }
+
+    .producto-img {
+        font-size: 45px;
+    }
+
+    /* Botones normales */
+    .btn-detalle {
+        padding: 10px 16px;
+        font-size: 14px;
+    }
+}
+
+
+/* CELULARES PEQUEÑOS */
+@media (max-width: 480px) {
+
+    .categorias-grid,
+    .productos-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .btn-navbar {
+        font-size: 12px;
+    }
+}
+
+
+/* Responsive extra */
+@media (max-width: 480px) {
+    .categoria {
+        padding: 20px;
+        font-size: 14px;
+    }
+}
+
+/* PRODUCTO DETALLE */
+.producto-detalle {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    background: #fff;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+
+/* IMAGEN */
+.producto-img img {
+    width: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+/* INFO */
+.producto-info h2 {
+    font-size: 1.8rem;
+    margin-bottom: 0.5rem;
+}
+
+.precio {
+    font-size: 1.6rem;
+    color: #e63946;
+    font-weight: bold;
+    margin: 1rem 0;
+}
+
+.descripcion {
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+}
+
+/* LISTA */
+.detalles {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 1.5rem;
+}
+
+.detalles li {
+    margin-bottom: 0.5rem;
+    color: #333;
+}
+
+/* BOTÓN COMO <a> */
+.btn-comprar {
+    display: inline-block;
+    background: #1d3557;
+    color: #fff;
+    padding: 0.9rem 1.5rem;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    
+}
+
+.btn-comprar:hover {
+    background: #457b9d;
+    transform: translateY(-2px);
+}
+
+/* RESPONSIVO */
+@media (max-width: 768px) {
+    .producto-detalle {
+        grid-template-columns: 1fr;
+    }
+
+    .producto-info h2 {
+        font-size: 1.5rem;
+    }
+
+    .precio {
+        font-size: 1.4rem;
+    }
+}

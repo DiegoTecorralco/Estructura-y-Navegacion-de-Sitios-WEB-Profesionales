@@ -183,7 +183,7 @@ Los breadcrumbs son un elemento de navegación que *muestra al usuario el camino
 **Inicio > Mi Cuenta > Configuración > Seguridad**
 
 *Ejemplo 3*
-**Inicio > Categoria > ropa > playera Nike**
+**Inicio / Pedidos / Pedido 001**
 
 
 ## Página de Error 404
